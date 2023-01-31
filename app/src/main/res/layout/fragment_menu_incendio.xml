@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/design_default_color_secondary_variant"
+    android:orientation="vertical">
+
+        <Button
+            android:id="@+id/nuevoIncendio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Añadir incendio" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modificar incendio" />
+
+        <Button
+            android:id="@+id/eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar incendios" />
+
+</LinearLayout>

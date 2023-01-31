@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".WeatherActivity">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvlocalidad"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvTempMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Temperatura máxima"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSecundarySoft"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="91dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/icono_temperatura" />
+
+                        <TextView
+                            android:id="@+id/tvTempMax1"
+                            android:layout_width="91dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvTempMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Temperatura mínima"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSecundarySoft"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="90dp"
+                            android:layout_height="89dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/t_frio" />
+
+                        <TextView
+                            android:id="@+id/tvTempMin1"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvTempMed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Temperatura media"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSecundarySoft"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="89dp"
+                            android:layout_height="83dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/t_media" />
+
+                        <TextView
+                            android:id="@+id/tvTempMed1"
+                            android:layout_width="89dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvVRacha"
+                            android:layout_width="152dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:text="Racha de viento"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSecundarySoft"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="90dp"
+                            android:layout_height="88dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/pngwing_com" />
+
+                        <TextView
+                            android:id="@+id/tvVRacha1"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvVMed"
+                            android:layout_width="166dp"
+                            android:layout_height="21dp"
+                            android:layout_gravity="center"
+                            android:text="Racha media viento"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSecundarySoft"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="90dp"
+                            android:layout_height="85dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/viento_fuerte" />
+
+                        <TextView
+                            android:id="@+id/tvVMed1"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvVPrec"
+                            android:layout_width="91dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:text="Precipitación"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSecundarySoft"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="91dp"
+                            android:layout_height="89dp"
+                            android:src="@drawable/lluvia__1_" />
+
+                        <TextView
+                            android:id="@+id/tvVPrec1"
+                            android:layout_width="91dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvEstadoCielo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Estado del cielo"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSecundarySoft"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="93dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/clima" />
+
+                        <TextView
+                            android:id="@+id/tvEstadoCielo1"
+                            android:layout_width="92dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

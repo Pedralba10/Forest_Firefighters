@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modificar_provincia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    app:cardCornerRadius="20dp"
+    tools:context=".MenuIncendioFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/design_default_color_secondary_variant"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/modificar_incendio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Modificar incendio"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tVNIncendio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nombre_incendio"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTintMode="add"
+                    android:hint="¿quieres cambiar el nombre del incendio?"
+                    android:textColor="#040000"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textViewNProvincia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etProvinmodi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:id="@+id/carroceta"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/boton_carroceta"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/carroceta"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <EditText
+                        android:id="@+id/etCharley"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Charley"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:textColorHint="#000000"
+                        android:importantForAutofill="no" />
+
+                    <TextView
+                        android:id="@+id/tVCharley"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:id="@+id/bulldozer"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/boton_bulldozer"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bulldoze4r"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <EditText
+                        android:id="@+id/etDelta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Delta"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:textColorHint="#000000" />
+
+                    <TextView
+                        android:id="@+id/tVDelta"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/cTierra"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/boton_ctierra"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bombero_forestal" />
+
+                    <EditText
+                        android:id="@+id/etRomeo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Romeo"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:textColorHint="#000000" />
+
+                    <TextView
+                        android:id="@+id/tVRomeo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/helicoptero"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/boton_helicoptero"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/captura" />
+
+                    <EditText
+                        android:id="@+id/etHelicoptero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Helicoptero"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:textColorHint="#000000" />
+
+                    <TextView
+                        android:id="@+id/tVHelico"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/avion"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/boton_avion"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icono_hidroavion" />
+
+                    <EditText
+                        android:id="@+id/etAvion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="AT"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:textColorHint="#000000"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/tVAT"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/cHelitransportada"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/boton_helitransportada"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/png_transparent_firefighter_s_helmet_casque_f1_paris_fire_brigade_sapper_firefighter" />
+
+                    <EditText
+                        android:id="@+id/etHelitransportada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Elif"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:textColorHint="#000000" />
+
+                    <TextView
+                        android:id="@+id/tVElif"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tVComentarios"
+                android:layout_width="369dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/comentarios"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etComentario"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btnModificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Modificar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
